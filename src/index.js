@@ -11,7 +11,7 @@ var tabs=document.getElementById('tab');
 var startX; 
 var swipebar;
 var menuWidth=0;
-const itemWidth=68;
+const itemWidth=75;
 const currentDate = new Date();
 
 
@@ -133,7 +133,7 @@ navigation.ontouchmove=function(event){
         swipebar.style.display='block';
     }
 
-    var step=15; //设置移动间距
+    var step=10; //设置移动间距
     var style;
     //当X坐标大于起始坐标时，向右滑动目录栏
     if(event.touches[0].clientX>startX){
