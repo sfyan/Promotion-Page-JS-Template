@@ -1,0 +1,158 @@
+$bgcolor:lightyellow;
+$menucolor:rgb(220, 132, 60);
+// $menucount:6;
+
+*,
+body {
+ margin: 0;
+ padding: 0;
+}
+html{
+    background-color: $bgcolor;
+    font-size:14px;
+}
+
+#kv{
+    max-width:540px;
+    margin:0 auto;
+    font-size:0;
+    position: relative;
+    img{
+        width:100%;
+    }
+}
+#navigation{
+    position: relative;
+    box-sizing:border-box;
+    padding:10px;
+    max-width:540px;
+    margin:0 auto;
+    background-color: $menucolor;
+    overflow:hidden;
+    ul{
+        // width: 75px*$menucount;
+        text-align: center;
+        margin:0 auto;
+        li{
+            display:inline-block;
+            padding:0 5px;
+            text-align: center;
+            a{
+                text-decoration: none;
+                color:#fff;
+                font-size:1rem;
+                line-height:1.6rem;
+            }
+        }
+       
+    }
+}
+
+#bar{
+    background-color: white;
+    height:2px;
+    width:50%;
+    position: absolute;
+    bottom:6px;
+    padding:0;
+    box-shadow: 0px 1px 1px #ccc;
+}
+
+#content{
+    max-width:540px;
+    text-align: center;
+    margin:0 auto;
+        img{
+            width:100%;
+        }
+        .title{
+            font-size:1.2rem;
+            color:$menucolor;
+            font-weight: 600;
+            margin-bottom:20px;
+        }
+        .block{
+            margin:0 15px;
+            .hotel{
+                background-color: white;
+                border-radius:8px;
+                height:199px;
+                width:calc(50% - 12px);
+                display: inline-block;
+                margin:0 5px 5px 5px;
+                overflow: hidden;
+                box-shadow: 0 0 8px 0 rgba(46,65,90,0.15);
+
+                .info{
+                    text-align: left;
+                    margin:5px 0 0 10px;
+                    font-size:1.1rem;
+                    color:#003580;
+                    .price{
+                        color:#FF0202;
+                        font-size:1.4rem;
+                        font-weight:500;
+                        padding:14px 0 10px 0;
+                    }
+                    .badge{
+                        background-color:#FF0202 ;
+                        border-radius: 4px;
+                        font-size:1rem;
+                        
+                    }
+                }
+    
+                .image{
+                    height:95px;
+                    background-size: cover;
+                    position: relative;
+                    .desc{
+                        position:absolute;
+                        bottom:0;
+                        left:6px;
+                        text-align: left;
+                        i{
+                            padding:1px;
+                            width:10px;
+                            height:10px;
+                            background: url('../images/star.png') no-repeat;
+                            background-size:100%;
+                            display: inline-block;
+                        }
+                        p{
+                           text-shadow: 0 0 0, 0 2px 2px rgba(0, 0, 0, 0.5);
+                           font-size:1.2rem;
+                           color:white;
+                        }
+                    } 
+
+                }
+        }
+        
+        }
+
+}
+
+#footer{
+    box-sizing: border-box;
+    max-width: 540px;
+    margin:0 auto;
+    padding:0;
+    #tab{
+        height:4rem;
+        margin-top:1rem;
+        .block{
+            text-align: center;
+            display: inline-block;
+            margin:0 auto;
+            padding:0;
+            width:50%;
+            margin-top: -18px;
+            img{
+                width:4.6rem;
+                height:4.6rem;
+            }
+        }
+    }
+   
+}
